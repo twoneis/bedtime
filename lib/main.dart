@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
               primarySwatch: Colors.pink,
               primaryColor: Colors.pink[200],
               brightness: brightness,
+              canvasColor: Colors.pink[200]
             ),
         themedWidgetBuilder: (context, theme) {
           return new MaterialApp(
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 1;
   Color circleColor;
   Color iconColor;
+  Color backgroundColor;
 
   void _getIconColor() {
     if (Theme.of(context).brightness == Brightness.dark) {
@@ -54,11 +56,11 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  void _getCircleColor() {
+  void _getBackgroundColor() {
     if (Theme.of(context).brightness == Brightness.dark) {
-      circleColor = Colors.black38;
+      backgroundColor = Color.fromARGB(255, 50, 50, 50);
     } else {
-      circleColor = Colors.white;
+      backgroundColor = Colors.white;
     }
   }
 
@@ -76,45 +78,52 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    _getCircleColor();
     _getIconColor();
+    _getBackgroundColor();
     return new Scaffold(
-      appBar: TopBar(
-        title: "Bed Time",
-        child: Icon(Icons.settings),
-        onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Settings()));
-        },
-      ),
-      bottomNavigationBar: AwesomeBottomNavigationBar(
-        icons: [
-          Icons.brightness_3,
-          Icons.hotel,
-          Icons.wb_sunny,
-        ],
-        iconColor: iconColor,
-        circleColor: circleColor,
-        tapCallback: (int index) {
-          setState(() {
-            _selectedIndex = index;
-          });
-          _pageController.animateToPage(_selectedIndex,
-              duration: const Duration(milliseconds: 300),
-              curve: Curves.ease);
-        },
-        selectedIndex: _selectedIndex,
-        bodyBackgroundColor: Theme.of(context).primaryColor,
-      ),
-      body: PageView(
-        children: <Widget>[GetUp(), Normal(), ToBed()],
-        controller: _pageController,
-        onPageChanged: (num) {
-          setState(() {
-            _selectedIndex = num;
-          });
-        },
-      )
+        appBar: TopBar(
+          backgroundColor: backgroundColor,
+          title: "Bed Time",
+          child: Icon(Icons.settings),
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Settings()));
+          },
+        ),
+        bottomNavigationBar: Container(
+          child: AwesomeBottomNavigationBar(
+            icons: [
+              Icons.brightness_3,
+              Icons.hotel,
+              Icons.wb_sunny,
+            ],
+            iconColor: iconColor,
+            circleColor: Theme.of(context).primaryColor,
+            tapCallback: (int index) {
+              setState(() {
+                _selectedIndex = index;
+              });
+              _pageController.animateToPage(_selectedIndex,
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.ease);
+            },
+            selectedIndex: _selectedIndex,
+            bodyBackgroundColor: backgroundColor,
+            
+          ),
+        ),
+        body: Container(
+          color: backgroundColor,
+          child: PageView(
+            children: <Widget>[GetUp(), Normal(), ToBed()],
+            controller: _pageController,
+            onPageChanged: (num) {
+              setState(() {
+                _selectedIndex = num;
+              });
+            },
+          )
+        )
     );
   }
 }

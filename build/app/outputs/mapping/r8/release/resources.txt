@@ -1,5 +1,5 @@
 android.content.res.Resources#getIdentifier present: true
-Web content present: true
+Web content present: false
 Referenced Strings:
   %s.%sParcelizer
   .org.chromium.Chromium.
@@ -137,7 +137,6 @@ Referenced Strings:
   NAME
   NAMES_ROUTE
   NONE
-  NO_ACTIVITY
   NO_TARGET
   NULL
   NUMBER
@@ -255,7 +254,6 @@ Referenced Strings:
   android.conversationTitle
   android.hiddenConversationTitle
   android.intent.action.RUN
-  android.intent.action.VIEW
   android.isGroupConversation
   android.messages
   android.messagingStyleUser
@@ -298,7 +296,6 @@ Referenced Strings:
   bot
   bottom
   calledAt
-  canLaunch
   cancel
   cancelAll
   channelAction
@@ -311,8 +308,6 @@ Referenced Strings:
   clear
   clearFocus
   clipboard
-  close
-  closeWebView
   closed
   codePoint
   colorAlpha
@@ -341,7 +336,6 @@ Referenced Strings:
   display
   dispose
   drawable
-  enableJavaScript
   enableLights
   enableSuggestions
   enableVibration
@@ -404,7 +398,6 @@ Referenced Strings:
   invisible_actions
   io.flutter.app.android.SplashScreenUn...
   io.flutter.plugins.sharedpreferences....
-  io.flutter.plugins.urllauncher.UrlLau...
   isBot
   isImportant
   isolate_snapshot_data
@@ -417,7 +410,6 @@ Referenced Strings:
   label
   largeIcon
   largeIconBitmapSource
-  launch
   ledColorAlpha
   ledColorBlue
   ledColorGreen
@@ -466,7 +458,6 @@ Referenced Strings:
   platformSpecifics
   playSound
   plugins.flutter.io/shared_preferences
-  plugins.flutter.io/url_launcher
   popRoute
   primaryColor
   priority
@@ -543,8 +534,6 @@ Referenced Strings:
   type
   updateViewLayout
   uri
-  url
-  useWebView
   value
   vendorId
   vibrationPattern
@@ -597,8 +586,6 @@ Marking id:accessibility_custom_action_6:2131034141 used because its prefix matc
 Marking id:accessibility_custom_action_7:2131034142 used because its prefix matches string pool constant accessibility
 Marking id:accessibility_custom_action_8:2131034143 used because its prefix matches string pool constant accessibility
 Marking id:accessibility_custom_action_9:2131034144 used because its prefix matches string pool constant accessibility
-Marking drawable:launch_background:2130968576 used because its prefix matches string pool constant launch
-Marking mipmap:launcher_icon:2131230721 used because its prefix matches string pool constant launch
 Marking attr:android_color:-1 used because its prefix matches string pool constant android
 Marking attr:android_alpha:-1 used because its prefix matches string pool constant android
 Marking attr:android_fontStyle:-1 used because its prefix matches string pool constant android
@@ -699,7 +686,6 @@ color:notification_action_color_filter:2130837504,
    dimen:notification_subtext_size:2130903059,
    dimen:notification_top_pad:2130903060,
    dimen:notification_top_pad_large_text:2130903061,
-   drawable:launch_background:2130968576,
    drawable:notification_action_background:2130968577,
    drawable:notification_bg:2130968578,
    drawable:notification_bg_low:2130968579,
@@ -762,7 +748,6 @@ color:notification_action_color_filter:2130837504,
    layout:notification_template_part_chronometer:2131165189,
    layout:notification_template_part_time:2131165190,
    mipmap:ic_launcher:2131230720,
-   mipmap:launcher_icon:2131230721,
    style:LaunchTheme:2131361792,
    attr:android_color:-1,
    attr:android_alpha:-1,
@@ -785,3 +770,8 @@ color:notification_action_color_filter:2130837504,
    attr:android_tileMode:-1,
    attr:android_offset:-1
 Skipped unused resource res/layout/custom_dialog.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/mipmap-mdpi-v4/launcher_icon.png: 2324 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-hdpi-v4/launcher_icon.png: 3550 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xhdpi-v4/launcher_icon.png: 4822 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxhdpi-v4/launcher_icon.png: 7582 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxxhdpi-v4/launcher_icon.png: 10960 bytes (replaced with small dummy file of size 67 bytes)

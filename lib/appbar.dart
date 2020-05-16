@@ -17,6 +17,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final Function onPressed;
   final Function onTitleTapped;
   final double elevation;
+  final Color backgroundColor;
 
   @override
   final Size preferredSize;
@@ -25,6 +26,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
       {@required this.title,
       @required this.child,
       @required this.onPressed,
+      this.backgroundColor,
       this.elevation,
       this.onTitleTapped})
       : preferredSize = Size.fromHeight(60.0);
@@ -32,68 +34,71 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Column(
-        children: <Widget>[
-          // SizedBox(height: 30,),
-          Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Hero(
-                tag: 'topBarBtn',
-                child: Card(
-                  elevation: elevation,
-                  shape: kBackButtonShape,
-                  child: MaterialButton(
-                    height: 50,
-                    minWidth: 50,
+      child: Container(
+        color: backgroundColor,
+        child: Column(
+          children: <Widget>[
+            // SizedBox(height: 30,),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Hero(
+                  tag: 'topBarBtn',
+                  child: Card(
                     elevation: elevation,
                     shape: kBackButtonShape,
-                    onPressed: onPressed,
-                    child: child,
-                  ),
-                ),
-              ),
-              // SizedBox(
-              //   width: 50,
-              // ),
-              Hero(
-                tag: 'title',
-                transitionOnUserGestures: true,
-                child: Card(
-                  elevation: elevation,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(30),
+                    child: MaterialButton(
+                      height: 50,
+                      minWidth: 50,
+                      elevation: elevation,
+                      shape: kBackButtonShape,
+                      onPressed: onPressed,
+                      child: child,
                     ),
                   ),
-                  child: InkWell(
-                    onTap: onTitleTapped,
-                    child: Container(
-                      width: MediaQuery.of(context).size.width / 1.5,
-                      height: 50,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 30),
-                          child: Text(
-                            title,
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 25,
-                              // color: Colors.black54,
+                ),
+                // SizedBox(
+                //   width: 50,
+                // ),
+                Hero(
+                  tag: 'title',
+                  transitionOnUserGestures: true,
+                  child: Card(
+                    elevation: elevation,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(30),
+                      ),
+                    ),
+                    child: InkWell(
+                      onTap: onTitleTapped,
+                      child: Container(
+                        width: MediaQuery.of(context).size.width / 1.5,
+                        height: 50,
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 30),
+                            child: Text(
+                              title,
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                                // color: Colors.black54,
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              )
-            ],
-          ),
-        ],
-      ),
+                )
+              ],
+            ),
+          ],
+        ),
+      )
     );
   }
 }

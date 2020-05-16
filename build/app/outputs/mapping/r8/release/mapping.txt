@@ -2643,20 +2643,6 @@ io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin$1 -> c.a.b.a.a:
     io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin this$0 -> c
     java.lang.Boolean doInBackground(java.lang.Void[]) -> a
     void onPostExecute(java.lang.Boolean) -> a
-io.flutter.plugins.urllauncher.UrlLauncherPlugin -> io.flutter.plugins.urllauncher.UrlLauncherPlugin:
-    io.flutter.plugin.common.PluginRegistry$Registrar mRegistrar -> a
-    void canLaunch(java.lang.String,io.flutter.plugin.common.MethodChannel$Result) -> a
-    void closeWebView(io.flutter.plugin.common.MethodChannel$Result) -> a
-    void launch(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result,java.lang.String) -> a
-    void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar) -> a
-    void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> a
-io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity -> io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity:
-    android.content.BroadcastReceiver broadcastReceiver -> b
-    android.webkit.WebView webview -> a
-io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity$1 -> io.flutter.plugins.urllauncher.a:
-    io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity this$0 -> a
-io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity$2 -> io.flutter.plugins.urllauncher.b:
-    io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity this$0 -> a
 io.flutter.util.PathUtils -> c.a.c.a:
     java.lang.String getCacheDirectory(android.content.Context) -> b
     java.lang.String getFilesDir(android.content.Context) -> a
@@ -3122,8 +3108,8 @@ io.flutter.view.VsyncWaiter$1 -> io.flutter.view.t:
 io.flutter.view.VsyncWaiter$1$1 -> io.flutter.view.s:
     io.flutter.view.VsyncWaiter$1 this$1 -> b
     long val$cookie -> a
-io.flutter.embedding.engine.FlutterEngine -> io.flutter.embedding.engine.a:
 io.flutter.embedding.android.FlutterSplashView -> io.flutter.embedding.android.FlutterSplashView:
-androidx.lifecycle.LiveData -> androidx.lifecycle.LiveData:
 androidx.core.R -> a.b.a:
+io.flutter.embedding.engine.FlutterEngine -> io.flutter.embedding.engine.a:
 androidx.activity.OnBackPressedDispatcher -> androidx.activity.OnBackPressedDispatcher:
+androidx.lifecycle.LiveData -> androidx.lifecycle.LiveData:

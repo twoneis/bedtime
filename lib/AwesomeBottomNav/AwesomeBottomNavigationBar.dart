@@ -111,7 +111,7 @@ class _AwesomeBottomNavigationBarState extends State<AwesomeBottomNavigationBar>
                 width: _size.width / 5,
                 child: Icon(
                   widget.icons[i],
-                  color: Colors.grey,
+                  color: Colors.white,
                 ),
               ),
             ),
