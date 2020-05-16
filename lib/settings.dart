@@ -4,7 +4,7 @@ import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:dynamic_theme/dynamic_theme.dart';
-import 'package:when_should_i_go_to_bed/appbar.dart';
+import 'package:bedtime/appbar.dart';
 
 import 'main.dart';
 

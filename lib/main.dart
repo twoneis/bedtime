@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:dynamic_theme/dynamic_theme.dart';
-import 'package:when_should_i_go_to_bed/AwesomeBottomNav/AwesomeBottomNavigationBar.dart';
+import 'package:bedtime/AwesomeBottomNav/AwesomeBottomNavigationBar.dart';
 
 import 'appbar.dart';
 import 'settings.dart';

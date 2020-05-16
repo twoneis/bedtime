@@ -224,13 +224,13 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "when_should_i_go_to_bed",
+      "name": "bedtime",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-05-16T12:40:02.843092Z",
+  "generated": "2020-05-16T12:53:26.270250Z",
   "generator": "pub",
   "generatorVersion": "2.8.0-dev.18.0.flutter-eea9717938"
 }
