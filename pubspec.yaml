@@ -21,7 +21,7 @@ dependencies:
     sdk: flutter
   datetime_picker_formfield: ^0.1.8
   flutter_linkify: 1.0.3
-  url_launcher: ^4.0.3
+  # url_launcher: ^4.0.3
   flutter_local_notifications:
   dynamic_theme:
   flutter_launcher_icons: "^0.7.2"

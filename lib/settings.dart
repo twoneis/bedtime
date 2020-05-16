@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_linkify/flutter_linkify.dart';
-import 'package:url_launcher/url_launcher.dart';
+//import 'package:url_launcher/url_launcher.dart';
 
 import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:bedtime/appbar.dart';
@@ -57,22 +57,22 @@ class Settings extends StatelessWidget {
                                 title: Linkify(
                                   text:
                                       "How much sleep do you need at which age? https://www.sleepfoundation.org/excessive-sleepiness/support/how-much-sleep-do-we-really-need",
-                                  onOpen: (url) async {
-                                    if (await canLaunch(url)) {
-                                      await launch(url);
-                                    }
-                                  },
+                                  // onOpen: (url) async {
+                                  //   if (await canLaunch(url)) {
+                                  //     await launch(url);
+                                  //   }
+                                  // },
                                 ),
                               ),
                               ListTile(
                                   title: Linkify(
                                 text:
                                     "Do Women need more sleep than men? https://www.sleepfoundation.org/articles/do-women-need-more-sleep-men",
-                                onOpen: (url) async {
-                                  if (await canLaunch(url)) {
-                                    await launch(url);
-                                  }
-                                },
+                                // onOpen: (url) async {
+                                //   if (await canLaunch(url)) {
+                                //     await launch(url);
+                                //   }
+                                // },
                               )),
                               ListTile(
                                 title: Text(

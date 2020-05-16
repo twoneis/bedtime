@@ -6,7 +6,6 @@ INJECTED from F:\src\bedtime\bedtime\android\app\src\main\AndroidManifest.xml:1:
 INJECTED from F:\src\bedtime\bedtime\android\app\src\main\AndroidManifest.xml:1:1-35:12
 MERGED from F:\src\bedtime\bedtime\android\app\src\main\AndroidManifest.xml:1:1-35:12
 MERGED from [:shared_preferences] F:\src\bedtime\bedtime\build\shared_preferences\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-7:12
-MERGED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
 MERGED from [:flutter_local_notifications] F:\src\bedtime\bedtime\build\flutter_local_notifications\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\sanja\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\6b38f0d24f69318a8c22790b02068556\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\sanja\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\459ca7ab81b62bd61315b8147ae8b3bd\AndroidManifest.xml:17:1-22:12
@@ -48,8 +47,6 @@ ADDED from F:\src\bedtime\bedtime\android\app\src\main\AndroidManifest.xml:4:5-6
 		ADDED from F:\src\bedtime\bedtime\android\app\src\main\AndroidManifest.xml:4:22-65
 application
 ADDED from F:\src\bedtime\bedtime\android\app\src\main\AndroidManifest.xml:11:5-34:19
-MERGED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\sanja\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\3d275bcc9f664bff28dd17a1d392fa1e\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\sanja\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\3d275bcc9f664bff28dd17a1d392fa1e\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\sanja\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\32052d4694d13f01193afae7b671da6d\AndroidManifest.xml:24:5-25:19
@@ -98,8 +95,6 @@ INJECTED from F:\src\bedtime\bedtime\android\app\src\main\AndroidManifest.xml
 INJECTED from F:\src\bedtime\bedtime\android\app\src\main\AndroidManifest.xml
 MERGED from [:shared_preferences] F:\src\bedtime\bedtime\build\shared_preferences\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] F:\src\bedtime\bedtime\build\shared_preferences\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] F:\src\bedtime\bedtime\build\flutter_local_notifications\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] F:\src\bedtime\bedtime\build\flutter_local_notifications\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\sanja\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\6b38f0d24f69318a8c22790b02068556\AndroidManifest.xml:20:5-22:41
@@ -140,11 +135,3 @@ uses-permission#android.permission.INTERNET
 ADDED from F:\src\bedtime\bedtime\android\app\src\debug\AndroidManifest.xml:6:5-66
 	android:name
 		ADDED from F:\src\bedtime\bedtime\android\app\src\debug\AndroidManifest.xml:6:22-64
-activity#io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity
-ADDED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:8:9-11:74
-	android:exported
-		ADDED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:13-37
-	android:theme
-		ADDED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:13-71
-	android:name
-		ADDED from [:url_launcher] F:\src\bedtime\bedtime\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:13-92

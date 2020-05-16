@@ -1,0 +1,6 @@
+# Referenced at F:\src\bedtime\bedtime\build\app\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:25
+-keep class com.example.when_should_i_go_to_bed.MainActivity { <init>(...); }
+# Referenced at F:\src\bedtime\bedtime\build\app\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:20
+-keep class io.flutter.app.FlutterApplication { <init>(...); }
+# Referenced at F:\src\bedtime\bedtime\build\app\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:49
+-keep class io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity { <init>(...); }

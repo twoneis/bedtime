@@ -29,9 +29,11 @@ class _AgeCardState extends State<AgeCard> {
             ),
             ButtonTheme.bar(
               child: TextFormField(
+                cursorColor: Colors.pink[200],
                 decoration: const InputDecoration(
-                    icon: Icon(Icons.hourglass_empty),
-                    hintText: 'Enter your age here'),
+                  icon: Icon(Icons.hourglass_empty, color: Colors.pinkAccent,),
+                  hintText: 'Enter your age here',
+                ),
                 controller: widget.ageInputController,
                 keyboardType: TextInputType.number,
               ),

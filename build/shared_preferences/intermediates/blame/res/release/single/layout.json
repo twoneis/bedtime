@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "F:\\src\\bedtime\\bedtime\\build\\shared_preferences\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\sanja\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3d275bcc9f664bff28dd17a1d392fa1e\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\src\\bedtime\\bedtime\\build\\shared_preferences\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\sanja\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3d275bcc9f664bff28dd17a1d392fa1e\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "F:\\src\\bedtime\\bedtime\\build\\shared_preferences\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\sanja\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3d275bcc9f664bff28dd17a1d392fa1e\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "F:\\src\\bedtime\\bedtime\\build\\shared_preferences\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\sanja\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3d275bcc9f664bff28dd17a1d392fa1e\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\src\\bedtime\\bedtime\\build\\shared_preferences\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\sanja\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3d275bcc9f664bff28dd17a1d392fa1e\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "F:\\src\\bedtime\\bedtime\\build\\shared_preferences\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\sanja\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3d275bcc9f664bff28dd17a1d392fa1e\\res\\layout\\notification_template_part_time.xml"
+    }
+]

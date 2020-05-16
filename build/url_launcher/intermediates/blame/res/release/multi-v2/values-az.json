@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\src\\bedtime\\bedtime\\build\\url_launcher\\intermediates\\res\\merged\\release\\values-az\\values-az.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\sanja\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3d275bcc9f664bff28dd17a1d392fa1e\\res\\values-az\\values-az.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "F:\\src\\bedtime\\bedtime\\build\\url_launcher\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-az\\values-az.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\sanja\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\3d275bcc9f664bff28dd17a1d392fa1e\\res\\values-az\\values-az.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

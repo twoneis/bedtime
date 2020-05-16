@@ -3,7 +3,6 @@ package io.flutter.plugins;
 import io.flutter.plugin.common.PluginRegistry;
 import com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin;
 import io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin;
-import io.flutter.plugins.urllauncher.UrlLauncherPlugin;
 
 /**
  * Generated file. Do not edit.
@@ -15,7 +14,6 @@ public final class GeneratedPluginRegistrant {
     }
     FlutterLocalNotificationsPlugin.registerWith(registry.registrarFor("com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin"));
     SharedPreferencesPlugin.registerWith(registry.registrarFor("io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin"));
-    UrlLauncherPlugin.registerWith(registry.registrarFor("io.flutter.plugins.urllauncher.UrlLauncherPlugin"));
   }
 
   private static boolean alreadyRegisteredWith(PluginRegistry registry) {
