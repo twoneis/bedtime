@@ -11,19 +11,32 @@ import 'main.dart';
 
 class Settings extends StatelessWidget {
   bool _theme = false;
+  Color backgroundColor;
+
+  void getColor(context) {
+    if (Theme.of(context).brightness == Brightness.dark) {
+      backgroundColor = Color.fromARGB(255, 50, 50, 50);
+    } else {
+      backgroundColor = Colors.white;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
+    getColor(context);
     return Scaffold(
-        appBar: TopBar(
-          title: "Settings",
-          child: Icon(Icons.arrow_back_ios),
-          onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => MyHomePage()));
-          },
-        ),
-        body: ListView(
+      appBar: TopBar(
+        title: "Settings",
+        child: Icon(Icons.arrow_back_ios),
+        backgroundColor: backgroundColor,
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => MyHomePage()));
+        },
+      ),
+      body: Container(
+        color: backgroundColor,
+        child: ListView(
           children: <Widget>[
             SwitchListTile(
               title: Text("Enable dark theme"),
@@ -86,6 +99,8 @@ class Settings extends StatelessWidget {
               },
             )
           ],
-        ));
+        )
+      )
+    );
   }
 }
