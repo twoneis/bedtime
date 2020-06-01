@@ -3,5 +3,5 @@
 An app which tells you, when you should go to bed, get up and go to bed.
 
 
-Credits
-akashom53/AwesomeBottomNavFlutter
+Credits to 
+akashom53 for AwesomeBottomNavFlutter (https://github.com/akashom53/AwesomeBottomNavFlutter)
