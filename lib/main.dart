@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
             ),
         themedWidgetBuilder: (context, theme) {
           return new MaterialApp(
+            debugShowCheckedModeBanner: false,
             title: 'Bed Time',
             theme: theme,
             home: new MyHomePage(title: 'Bed Time'),

@@ -4,6 +4,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   ShapeBorder kBackButtonShape = RoundedRectangleBorder(
     borderRadius: BorderRadius.only(
       topRight: Radius.circular(30),
+      bottomRight: Radius.circular(30)
     ),
   );
 

@@ -1,4 +1,4 @@
-#Sat May 16 15:18:35 CEST 2020
+#Mon Jun 01 18:47:17 CEST 2020
 base.0=F\:\\src\\bedtime\\bedtime\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
