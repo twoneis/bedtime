@@ -4,6 +4,9 @@ import 'package:flutter/rendering.dart';
 
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 
+import './Elements/ageCard.dart';
+import './Elements/genderCard.dart';
+
 void main() => runApp(ToBed());
 
 class ToBed extends StatefulWidget {
@@ -118,66 +121,12 @@ class _GetUpState extends State<ToBed> {
     return new ListView(
       padding: const EdgeInsets.all(20.0),
       children: <Widget>[
-        Card(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
-          ),
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                const ListTile(
-                  title: Text('How old are you?'),
-                ),
-                ButtonTheme.bar(
-                  child: TextFormField(
-                    decoration: const InputDecoration(
-                        icon: Icon(Icons.hourglass_empty),
-                        hintText: 'Enter your age here'),
-                    controller: ageInputController,
-                    keyboardType: TextInputType.number,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          elevation: 2,
-        ),
-        Card(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              const ListTile(
-                title: Text("What's your gender?"),
-              ),
-              new RadioListTile(
-                  value: 0,
-                  groupValue: _genderValue,
-                  title: Text("Male"),
-                  onChanged: (value) {_genderInputChanged(value);},
-                  activeColor: Theme.of(context).primaryColor,
-                ),
-              new RadioListTile(
-                  value: 1,
-                  groupValue: _genderValue,
-                  title: Text("Female"),
-                  onChanged: (value) {_genderInputChanged(value);},
-                  activeColor: Theme.of(context).primaryColor,
-                ),
-              new RadioListTile(
-                  value: 2,
-                  groupValue: _genderValue,
-                  title: Text("Other"),
-                  onChanged: (value) {_genderInputChanged(value);},
-                  activeColor: Theme.of(context).primaryColor,
-                )
-            ],
-          ),
-          elevation: 2,
+        AgeCard(ageInputController: ageInputController,),
+        GenderCard(
+          value: _genderValue,
+          onChanged: (value) {
+            _genderInputChanged(value);
+          },
         ),
         Card(
           shape: RoundedRectangleBorder(
